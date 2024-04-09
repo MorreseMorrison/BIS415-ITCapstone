@@ -1,0 +1,10 @@
+C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\bin\Debug\WATS.exe.config
+C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\bin\Debug\WATS.exe
+C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\bin\Debug\WATS.pdb
+C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.csprojAssemblyReference.cache
+C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.Form1.resources
+C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.Properties.Resources.resources
+C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.csproj.GenerateResource.cache
+C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.csproj.CoreCompileInputs.cache
+C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.exe
+C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.pdb
