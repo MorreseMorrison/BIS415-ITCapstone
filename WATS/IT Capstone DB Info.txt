@@ -1,0 +1,7 @@
+rese298
+password01!
+password01!
+
+peircecollegecapstone.database.windows.net
+
+wats = database

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WATS
 {
@@ -72,9 +73,46 @@ namespace WATS
             Create_Dispose_Assets FormLoader = new Create_Dispose_Assets();
             FormLoader.Show();
         }
+
         //**(SECTION 2 - CREATION SCREENS - END)**//
 
+        //**TEST DB*//
+        private void Test_Database_Connection_Button_Click(object sender, EventArgs e)
+        {
+            //(Code Block 1 - START) - Establishing A Connection With The SQL Server Database
+            //(Code Block 1.1) - SQL Connection String Intilization
+            String SQLConnectionString;
 
-        
+            //(Code Block 1.2) - SQL Connection String Assigned Database Connection String Information
+            SQLConnectionString = "Data Source=MORRESEMORRDED3;Initial Catalog=BIS345;Integrated Security=True;MultipleActiveResultSets=True";
+
+            //(Code Block 1.3) - Create An Object Of Type SqlConnection Named "SQLConnectionObject", Fed SQLConnectionString As The Parameter
+            SqlConnection SQLConnectionObject = new SqlConnection(SQLConnectionString);
+
+
+
+            //#EXCEPTION 1 START//
+
+            try
+            {
+                //(Code Block 1.4) - The Connection Method Is Utilized To Create Open The Connection With The SQL Server Database
+                SQLConnectionObject.Open();
+                MessageBox.Show("Database Connection Test Is Successful!");
+                //(Code Block 1 - END)//
+            }
+
+
+            catch (System.Data.SqlClient.SqlException)
+            {
+
+                MessageBox.Show("Error With Connecting To The Database, Please Contact Your System Administrator Before Starting The Application Again");
+                System.Windows.Forms.Application.Exit();
+
+            }
+
+            //#EXCEPTION 1 END//
+        }
+
+
     }
 }

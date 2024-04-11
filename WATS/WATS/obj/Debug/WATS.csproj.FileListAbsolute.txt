@@ -7,9 +7,9 @@ C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.cspr
 C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.csproj.CoreCompileInputs.cache
 C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.exe
 C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.pdb
-C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.csproj.AssemblyReference.cache
 C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.Assign_Unassign_Office_Assets.resources
 C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.Assign_Unassign_Computer_Assets.resources
 C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.Create_Dispose_Assets.resources
 C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.Create_Inactivate_Employees.resources
 C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.Create_Inactivate_Offices.resources
+C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.csprojAssemblyReference.cache

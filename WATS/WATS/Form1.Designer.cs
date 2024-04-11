@@ -36,7 +36,7 @@
             this.Create_Inactivate_Offices_Button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
+            this.Test_Database_Connection_Button = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.Create_Dispose_Assets_Button = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -119,15 +119,16 @@
             this.dataGridView1.Size = new System.Drawing.Size(190, 126);
             this.dataGridView1.TabIndex = 6;
             // 
-            // button5
+            // Test_Database_Connection_Button
             // 
-            this.button5.Location = new System.Drawing.Point(253, 219);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(81, 49);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "Test Database Connection";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Test_Database_Connection_Button.Location = new System.Drawing.Point(253, 219);
+            this.Test_Database_Connection_Button.Margin = new System.Windows.Forms.Padding(2);
+            this.Test_Database_Connection_Button.Name = "Test_Database_Connection_Button";
+            this.Test_Database_Connection_Button.Size = new System.Drawing.Size(81, 49);
+            this.Test_Database_Connection_Button.TabIndex = 8;
+            this.Test_Database_Connection_Button.Text = "Test Database Connection";
+            this.Test_Database_Connection_Button.UseVisualStyleBackColor = true;
+            this.Test_Database_Connection_Button.Click += new System.EventHandler(this.Test_Database_Connection_Button_Click);
             // 
             // button6
             // 
@@ -192,7 +193,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Create_Dispose_Assets_Button);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.Test_Database_Connection_Button);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Create_Inactivate_Offices_Button);
@@ -220,7 +221,7 @@
         private System.Windows.Forms.Button Create_Inactivate_Offices_Button;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button Test_Database_Connection_Button;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button Create_Dispose_Assets_Button;
         private System.Windows.Forms.Label label2;
