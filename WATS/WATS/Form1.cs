@@ -84,8 +84,9 @@ namespace WATS
             String SQLConnectionString;
 
             //(Code Block 1.2) - SQL Connection String Assigned Database Connection String Information
-            SQLConnectionString = "Data Source=MORRESEMORRDED3;Initial Catalog=BIS345;Integrated Security=True;MultipleActiveResultSets=True";
+            //SQLConnectionString = "Data Source=MORRESEMORRDED3;Initial Catalog=BIS345;Integrated Security=True;MultipleActiveResultSets=True";
 
+            SQLConnectionString = "Server=tcp:peircecollegecapstone.database.windows.net,1433; Database = wats; User ID = rese298; Password = password01!; Trusted_Connection = False; Encrypt = True";
             //(Code Block 1.3) - Create An Object Of Type SqlConnection Named "SQLConnectionObject", Fed SQLConnectionString As The Parameter
             SqlConnection SQLConnectionObject = new SqlConnection(SQLConnectionString);
 
