@@ -48,6 +48,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assign_Unassign_Computer_Assets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assign_Unassign_Computer_Assets.Designer.cs">
+      <DependentUpon>Assign_Unassign_Computer_Assets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assign_Unassign_Office_Assets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assign_Unassign_Office_Assets.Designer.cs">
+      <DependentUpon>Assign_Unassign_Office_Assets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Dispose_Assets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Dispose_Assets.Designer.cs">
+      <DependentUpon>Create_Dispose_Assets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Inactivate_Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Inactivate_Employees.Designer.cs">
+      <DependentUpon>Create_Inactivate_Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Inactivate_Offices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Inactivate_Offices.Designer.cs">
+      <DependentUpon>Create_Inactivate_Offices.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +86,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Assign_Unassign_Computer_Assets.resx">
+      <DependentUpon>Assign_Unassign_Computer_Assets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assign_Unassign_Office_Assets.resx">
+      <DependentUpon>Assign_Unassign_Office_Assets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Dispose_Assets.resx">
+      <DependentUpon>Create_Dispose_Assets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Inactivate_Employees.resx">
+      <DependentUpon>Create_Inactivate_Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_Inactivate_Offices.resx">
+      <DependentUpon>Create_Inactivate_Offices.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
