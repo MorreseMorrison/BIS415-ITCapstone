@@ -1,0 +1,59 @@
+CREATE TABLE dbo.Employee_Table (
+    Employee_ID INT IDENTITY(1,1) NOT NULL,
+	Employee_SSN INT NOT NULL UNIQUE,
+	First_Name VARCHAR (35) NOT NULL,
+	Last_Name VARCHAR (35) NOT NULL,
+	Date_Of_Birth DATE NOT NULL,
+	Job_Title VARCHAR (35) NOT NULL
+	Hire_Date DATE NOT NULL,
+	Status VARCHAR (1) NOT NULL,
+	Office_ID INT (10) NOT NULL,
+	Email VARCHAR (50) NOT NULL,
+	
+ 
+
+	/* Primary Key*/
+	PRIMARY KEY (Employee_ID),
+	/* Primary Key*/
+
+
+    )
+	
+CREATE TABLE dbo.Office_Table (
+    
+	Office_ID INT IDENTITY(1,1) NOT NULL,
+	Employee_ID INT NOT NULL,
+	Street_Address VARCHAR (45) NOT NULL,
+	City VARCHAR (45) NOT NULL,
+	State_Name VARCHAR (2) NOT NULL,
+	Zip_Code INT (5) NOT NULL,
+	Office_Name VARCHAR (50) NOT NULL,
+
+	/* Primary Key*/
+	PRIMARY KEY (Office_ID),
+	/* Primary Key*/
+
+    )
+
+CREATE TABLE dbo.Asset_Table (
+    
+	Asset_ID INT IDENTITY(1,1) NOT NULL,
+	Asset_Manufacturer VARCHAR (35) NOT NULL,
+	Asset_Type VARCHAR (35) NOT NULL,
+	Asset_Model_Type VARCHAR (35) NOT NULL,
+	Asset_Model_Name VARCHAR (50) NOT NULL,
+	Asset_Status VARCHAR (10) NOT NULL,
+	Asset_Purchase_Date DATE NOT NULL,
+	Asset_Disposal_Date DATE NOT NULL,
+	Asset_NBV INT (10) NOT NULL,
+	Office_ID INT (10) NOT NULL,
+	Employee_ID INT (10) NOT NULL,
+	
+	Course_Name VARCHAR(255) NOT NULL UNIQUE,
+
+	/* Primary Key*/
+	PRIMARY KEY (Asset_ID),
+	/* Primary Key*/
+
+
+    )
