@@ -13,6 +13,10 @@ namespace WATS
 {
     public partial class Create_Inactivate_Offices : Form
     {
+
+
+        SqlConnection con = new SqlConnection("Server=tcp:peircecollegecapstone.database.windows.net,1433; Database = wats; User ID = rese298; Password = password01!; Trusted_Connection = False; Encrypt = True");
+
         public Create_Inactivate_Offices()
         {
             InitializeComponent();
@@ -125,5 +129,76 @@ namespace WATS
             //**MAIN LOGIC END**//
 
         }
+
+        private void Create_Office_Button_Click(object sender, EventArgs e)
+        {
+
+
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("INSERT INTO Office_Table (Street_Address,City,State_Name,Zip_Code,Office_Name,Office_Status)values(' " + Street_Address_Text_Box.Text + " ', ' " + City_Text_Box.Text + " ', ' " + State_Text_Box.Text + " ', ' " + Zip_Code_Text_Box.Text + " ', ' " + Office_Name_Text_Box.Text + " ', ' " + Office_Status_Combo_Box.Text + " ')", con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Addedd");
+            }
+
+            catch(Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            con.Close();
+
+        }
+
+        private void Inactivate_Office_Button_Click(object sender, EventArgs e)
+        {
+
+
+
+            try
+            {
+                
+                con.Open();
+                SqlCommand cmd = new SqlCommand("UPDATE Office_Table SET Office_Status = 'INACTIVE' WHERE Office_ID=@Office_ID", con);
+                cmd.Parameters.AddWithValue("@Office_ID", int.Parse(Office_ID_Text_Box.Text));
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Updated");
+            }
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            con.Close();
+
+
+           
+        }
+
+        private void Activate_Office_Button_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                con.Open();
+                SqlCommand cmd = new SqlCommand("UPDATE Office_Table SET Office_Status = 'ACTIVE' WHERE Office_ID=@Office_ID", con);
+                cmd.Parameters.AddWithValue("@Office_ID", int.Parse(Office_ID_Text_Box.Text));
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Updated");
+            }
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            con.Close();
+
+        }
     }
-}
+
+  }
+

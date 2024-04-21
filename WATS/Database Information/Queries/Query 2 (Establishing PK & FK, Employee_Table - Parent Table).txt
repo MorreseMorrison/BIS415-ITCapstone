@@ -1,0 +1,6 @@
+ALTER TABLE Employee_Table
+ADD FOREIGN KEY (Office_ID) REFERENCES Office_Table (Office_ID);
+
+
+ALTER Table Employee_Table
+ADD FOREIGN KEY (Asset_ID) REFERENCES Asset_Table (Asset_TableID)

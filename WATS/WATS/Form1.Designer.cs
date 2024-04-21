@@ -49,17 +49,18 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(1314, 101);
+            this.monthCalendar1.Location = new System.Drawing.Point(1168, 81);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // Assign_Unassign_Office_Assets_Button
             // 
-            this.Assign_Unassign_Office_Assets_Button.Location = new System.Drawing.Point(12, 130);
-            this.Assign_Unassign_Office_Assets_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Assign_Unassign_Office_Assets_Button.Location = new System.Drawing.Point(10, 104);
+            this.Assign_Unassign_Office_Assets_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Assign_Unassign_Office_Assets_Button.Name = "Assign_Unassign_Office_Assets_Button";
-            this.Assign_Unassign_Office_Assets_Button.Size = new System.Drawing.Size(269, 30);
+            this.Assign_Unassign_Office_Assets_Button.Size = new System.Drawing.Size(215, 24);
             this.Assign_Unassign_Office_Assets_Button.TabIndex = 1;
             this.Assign_Unassign_Office_Assets_Button.Text = "Assign \\ Unassign Office Assets";
             this.Assign_Unassign_Office_Assets_Button.UseVisualStyleBackColor = true;
@@ -67,10 +68,10 @@
             // 
             // Assign_Unassign_Computer_Assets_Button
             // 
-            this.Assign_Unassign_Computer_Assets_Button.Location = new System.Drawing.Point(12, 180);
-            this.Assign_Unassign_Computer_Assets_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Assign_Unassign_Computer_Assets_Button.Location = new System.Drawing.Point(10, 144);
+            this.Assign_Unassign_Computer_Assets_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Assign_Unassign_Computer_Assets_Button.Name = "Assign_Unassign_Computer_Assets_Button";
-            this.Assign_Unassign_Computer_Assets_Button.Size = new System.Drawing.Size(269, 30);
+            this.Assign_Unassign_Computer_Assets_Button.Size = new System.Drawing.Size(215, 24);
             this.Assign_Unassign_Computer_Assets_Button.TabIndex = 2;
             this.Assign_Unassign_Computer_Assets_Button.Text = "Assign \\ Unassign Computer Assets";
             this.Assign_Unassign_Computer_Assets_Button.UseVisualStyleBackColor = true;
@@ -78,10 +79,10 @@
             // 
             // Create_Inactivate_Employees_Button
             // 
-            this.Create_Inactivate_Employees_Button.Location = new System.Drawing.Point(12, 270);
-            this.Create_Inactivate_Employees_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Create_Inactivate_Employees_Button.Location = new System.Drawing.Point(10, 216);
+            this.Create_Inactivate_Employees_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Create_Inactivate_Employees_Button.Name = "Create_Inactivate_Employees_Button";
-            this.Create_Inactivate_Employees_Button.Size = new System.Drawing.Size(269, 30);
+            this.Create_Inactivate_Employees_Button.Size = new System.Drawing.Size(215, 24);
             this.Create_Inactivate_Employees_Button.TabIndex = 3;
             this.Create_Inactivate_Employees_Button.Text = "Create \\ Inactivate Employees";
             this.Create_Inactivate_Employees_Button.UseVisualStyleBackColor = true;
@@ -89,10 +90,10 @@
             // 
             // Create_Inactivate_Offices_Button
             // 
-            this.Create_Inactivate_Offices_Button.Location = new System.Drawing.Point(12, 315);
-            this.Create_Inactivate_Offices_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Create_Inactivate_Offices_Button.Location = new System.Drawing.Point(10, 252);
+            this.Create_Inactivate_Offices_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Create_Inactivate_Offices_Button.Name = "Create_Inactivate_Offices_Button";
-            this.Create_Inactivate_Offices_Button.Size = new System.Drawing.Size(269, 30);
+            this.Create_Inactivate_Offices_Button.Size = new System.Drawing.Size(215, 24);
             this.Create_Inactivate_Offices_Button.TabIndex = 4;
             this.Create_Inactivate_Offices_Button.Text = "Create \\ Inactivate Offices";
             this.Create_Inactivate_Offices_Button.UseVisualStyleBackColor = true;
@@ -103,9 +104,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Info;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(576, 9);
+            this.label1.Location = new System.Drawing.Point(503, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(477, 29);
+            this.label1.Size = new System.Drawing.Size(375, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "WATS (Warehouse Asset Tracking System)";
             // 
@@ -116,20 +118,20 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(337, 101);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(270, 81);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(965, 241);
+            this.dataGridView1.Size = new System.Drawing.Size(889, 193);
             this.dataGridView1.TabIndex = 6;
             // 
             // Test_Database_Connection_Button
             // 
-            this.Test_Database_Connection_Button.Location = new System.Drawing.Point(337, 346);
-            this.Test_Database_Connection_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Test_Database_Connection_Button.Location = new System.Drawing.Point(270, 277);
+            this.Test_Database_Connection_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Test_Database_Connection_Button.Name = "Test_Database_Connection_Button";
-            this.Test_Database_Connection_Button.Size = new System.Drawing.Size(108, 60);
+            this.Test_Database_Connection_Button.Size = new System.Drawing.Size(86, 48);
             this.Test_Database_Connection_Button.TabIndex = 8;
             this.Test_Database_Connection_Button.Text = "Test Database Connection";
             this.Test_Database_Connection_Button.UseVisualStyleBackColor = true;
@@ -137,10 +139,10 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(482, 346);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button6.Location = new System.Drawing.Point(360, 278);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(108, 60);
+            this.button6.Size = new System.Drawing.Size(86, 48);
             this.button6.TabIndex = 9;
             this.button6.Text = "Show All Employees";
             this.button6.UseVisualStyleBackColor = true;
@@ -148,10 +150,10 @@
             // 
             // Create_Dispose_Assets_Button
             // 
-            this.Create_Dispose_Assets_Button.Location = new System.Drawing.Point(12, 361);
-            this.Create_Dispose_Assets_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Create_Dispose_Assets_Button.Location = new System.Drawing.Point(10, 289);
+            this.Create_Dispose_Assets_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Create_Dispose_Assets_Button.Name = "Create_Dispose_Assets_Button";
-            this.Create_Dispose_Assets_Button.Size = new System.Drawing.Size(269, 30);
+            this.Create_Dispose_Assets_Button.Size = new System.Drawing.Size(215, 24);
             this.Create_Dispose_Assets_Button.TabIndex = 10;
             this.Create_Dispose_Assets_Button.Text = "Create \\ Dispose Assets";
             this.Create_Dispose_Assets_Button.UseVisualStyleBackColor = true;
@@ -161,37 +163,40 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.Info;
-            this.label2.Location = new System.Drawing.Point(65, 101);
+            this.label2.Location = new System.Drawing.Point(52, 81);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 17);
+            this.label2.Size = new System.Drawing.Size(132, 13);
             this.label2.TabIndex = 11;
             this.label2.Text = "Asset Assignment Screens";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(117, 239);
+            this.label3.Location = new System.Drawing.Point(94, 191);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 17);
+            this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 12;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.Info;
-            this.label4.Location = new System.Drawing.Point(85, 247);
+            this.label4.Location = new System.Drawing.Point(68, 198);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 17);
+            this.label4.Size = new System.Drawing.Size(88, 13);
             this.label4.TabIndex = 13;
             this.label4.Text = "Creation Screens";
             // 
             // Show_All_Offices_Button
             // 
             this.Show_All_Offices_Button.AutoSize = true;
-            this.Show_All_Offices_Button.Location = new System.Drawing.Point(1048, 346);
-            this.Show_All_Offices_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Show_All_Offices_Button.Location = new System.Drawing.Point(974, 277);
+            this.Show_All_Offices_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Show_All_Offices_Button.Name = "Show_All_Offices_Button";
-            this.Show_All_Offices_Button.Size = new System.Drawing.Size(119, 60);
+            this.Show_All_Offices_Button.Size = new System.Drawing.Size(95, 48);
             this.Show_All_Offices_Button.TabIndex = 14;
             this.Show_All_Offices_Button.Text = "Show All Offices";
             this.Show_All_Offices_Button.UseVisualStyleBackColor = true;
@@ -199,10 +204,10 @@
             // 
             // Show_All_Assets_Button
             // 
-            this.Show_All_Assets_Button.Location = new System.Drawing.Point(1194, 346);
-            this.Show_All_Assets_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Show_All_Assets_Button.Location = new System.Drawing.Point(1073, 278);
+            this.Show_All_Assets_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Show_All_Assets_Button.Name = "Show_All_Assets_Button";
-            this.Show_All_Assets_Button.Size = new System.Drawing.Size(108, 60);
+            this.Show_All_Assets_Button.Size = new System.Drawing.Size(86, 48);
             this.Show_All_Assets_Button.TabIndex = 15;
             this.Show_All_Assets_Button.Text = "Show All Assets";
             this.Show_All_Assets_Button.UseVisualStyleBackColor = true;
@@ -210,10 +215,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1594, 414);
+            this.ClientSize = new System.Drawing.Size(1411, 331);
             this.Controls.Add(this.Show_All_Assets_Button);
             this.Controls.Add(this.Show_All_Offices_Button);
             this.Controls.Add(this.label4);
@@ -230,7 +235,7 @@
             this.Controls.Add(this.Assign_Unassign_Office_Assets_Button);
             this.Controls.Add(this.monthCalendar1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "WATS©";
             this.Load += new System.EventHandler(this.Form1_Load);
