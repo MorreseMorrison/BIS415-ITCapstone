@@ -13,6 +13,11 @@ namespace WATS
 {
     public partial class Create_Dispose_Assets : Form
     {
+
+        SqlConnection con = new SqlConnection("Server=tcp:peircecollegecapstone.database.windows.net,1433; Database = wats; User ID = rese298; Password = password01!; Trusted_Connection = False; Encrypt = True");
+
+
+
         public Create_Dispose_Assets()
         {
             InitializeComponent();
@@ -121,6 +126,28 @@ namespace WATS
 
             //**(Code Block 2 - END)**//
             //**MAIN LOGIC END**//
+        }
+
+        //
+        private void Create_Asset_Button_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("INSERT INTO Asset_Table (Asset_Manufacturer  ,  Asset_Type, Asset_Model_Type,  Asset_Model_Name   ,  Asset_Status,   Asset_Purchase_Date, Asset_Disposal_Date,  Asset_NBV,      Notes)" +
+                    "values(' " + Asset_Manufacturer_Combo_Box.Text + " ', ' " + Asset_Type_Combo_Box.Text + " ', ' " + Asset_Model_Type_Combo_Box.Text + " ', ' " + Asset_Model_Name_Text_Box.Text + " ', ' " + Asset_Status_Combo_Box.Text + " ', ' " + DateTime.Parse(Asset_Purchase_Date_Text_Box.Text) + " ', ' " + DateTime.Parse(Asset_Disposal_Date_Combo_Box.Text) + " ', ' " + int.Parse(Asset_NBV_Text_Box.Text) +  " ', ' " + Notes_Text_Box.Text + " ')", con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Addedd");
+            }
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            con.Close();
+
         }
     }
 }

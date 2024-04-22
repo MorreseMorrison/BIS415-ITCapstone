@@ -13,6 +13,9 @@ namespace WATS
 {
     public partial class Create_Inactivate_Employees : Form
     {
+
+        SqlConnection con = new SqlConnection("Server=tcp:peircecollegecapstone.database.windows.net,1433; Database = wats; User ID = rese298; Password = password01!; Trusted_Connection = False; Encrypt = True");
+
         public Create_Inactivate_Employees()
         {
             InitializeComponent();
@@ -129,5 +132,67 @@ namespace WATS
             //**MAIN LOGIC END**//
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("INSERT INTO Employee_Table (First_Name,Last_Name,Job_Title,Status,Office_ID,Email,Asset_ID)values(' " + First_Name_Text_Box.Text + " ', ' " + Last_Name_Text_Box.Text + " ', ' " + Job_Title_Combo_Box.Text + " ', ' " + Status_Combo_Box.Text + " ', ' " + Office_ID_Text_Box.Text + " ', ' " + Email_Text_Box.Text + " ', ' " + int.Parse(Asset_ID_Text_Box.Text) + " ')", con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Addedd");
+                //                cmd.Parameters.AddWithValue("@Office_ID", int.Parse(Office_ID_Text_Box.Text));
+
+            }
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            con.Close();
+
+        }
+
+        private void Inactivate_Employee_Button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                con.Open();
+                SqlCommand cmd = new SqlCommand("UPDATE Employee_Table SET Status = 'INACTIVE' WHERE Employee_ID=@Employee_ID", con);
+                cmd.Parameters.AddWithValue("@Employee_ID", int.Parse(Employee_ID_Text_Box.Text));
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Updated");
+            }
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            con.Close();
+        }
+
+        private void Reactivate_Employee_Button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                con.Open();
+                SqlCommand cmd = new SqlCommand("UPDATE Employee_Table SET Status = 'ACTIVE' WHERE Employee_ID=@Employee_ID", con);
+                cmd.Parameters.AddWithValue("@Employee_ID", int.Parse(Employee_ID_Text_Box.Text));
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Updated");
+            }
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            con.Close();
+        }
     }
-}
+   }
+
