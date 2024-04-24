@@ -44,13 +44,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Show_All_Offices_Button = new System.Windows.Forms.Button();
             this.Show_All_Assets_Button = new System.Windows.Forms.Button();
+            this.Show_All_Office_Assets_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // monthCalendar1
             // 
             this.monthCalendar1.Location = new System.Drawing.Point(1168, 81);
-            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(7);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
@@ -58,7 +59,7 @@
             // Assign_Unassign_Office_Assets_Button
             // 
             this.Assign_Unassign_Office_Assets_Button.Location = new System.Drawing.Point(10, 104);
-            this.Assign_Unassign_Office_Assets_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Assign_Unassign_Office_Assets_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Assign_Unassign_Office_Assets_Button.Name = "Assign_Unassign_Office_Assets_Button";
             this.Assign_Unassign_Office_Assets_Button.Size = new System.Drawing.Size(215, 24);
             this.Assign_Unassign_Office_Assets_Button.TabIndex = 1;
@@ -69,7 +70,7 @@
             // Assign_Unassign_Computer_Assets_Button
             // 
             this.Assign_Unassign_Computer_Assets_Button.Location = new System.Drawing.Point(10, 144);
-            this.Assign_Unassign_Computer_Assets_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Assign_Unassign_Computer_Assets_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Assign_Unassign_Computer_Assets_Button.Name = "Assign_Unassign_Computer_Assets_Button";
             this.Assign_Unassign_Computer_Assets_Button.Size = new System.Drawing.Size(215, 24);
             this.Assign_Unassign_Computer_Assets_Button.TabIndex = 2;
@@ -80,7 +81,7 @@
             // Create_Inactivate_Employees_Button
             // 
             this.Create_Inactivate_Employees_Button.Location = new System.Drawing.Point(10, 216);
-            this.Create_Inactivate_Employees_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_Inactivate_Employees_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Inactivate_Employees_Button.Name = "Create_Inactivate_Employees_Button";
             this.Create_Inactivate_Employees_Button.Size = new System.Drawing.Size(215, 24);
             this.Create_Inactivate_Employees_Button.TabIndex = 3;
@@ -91,7 +92,7 @@
             // Create_Inactivate_Offices_Button
             // 
             this.Create_Inactivate_Offices_Button.Location = new System.Drawing.Point(10, 252);
-            this.Create_Inactivate_Offices_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_Inactivate_Offices_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Inactivate_Offices_Button.Name = "Create_Inactivate_Offices_Button";
             this.Create_Inactivate_Offices_Button.Size = new System.Drawing.Size(215, 24);
             this.Create_Inactivate_Offices_Button.TabIndex = 4;
@@ -119,7 +120,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(270, 81);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -129,7 +130,7 @@
             // Test_Database_Connection_Button
             // 
             this.Test_Database_Connection_Button.Location = new System.Drawing.Point(270, 277);
-            this.Test_Database_Connection_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Test_Database_Connection_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Test_Database_Connection_Button.Name = "Test_Database_Connection_Button";
             this.Test_Database_Connection_Button.Size = new System.Drawing.Size(86, 48);
             this.Test_Database_Connection_Button.TabIndex = 8;
@@ -139,8 +140,8 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(360, 278);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Location = new System.Drawing.Point(445, 278);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(86, 48);
             this.button6.TabIndex = 9;
@@ -151,7 +152,7 @@
             // Create_Dispose_Assets_Button
             // 
             this.Create_Dispose_Assets_Button.Location = new System.Drawing.Point(10, 289);
-            this.Create_Dispose_Assets_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_Dispose_Assets_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Dispose_Assets_Button.Name = "Create_Dispose_Assets_Button";
             this.Create_Dispose_Assets_Button.Size = new System.Drawing.Size(215, 24);
             this.Create_Dispose_Assets_Button.TabIndex = 10;
@@ -193,8 +194,8 @@
             // Show_All_Offices_Button
             // 
             this.Show_All_Offices_Button.AutoSize = true;
-            this.Show_All_Offices_Button.Location = new System.Drawing.Point(974, 277);
-            this.Show_All_Offices_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Show_All_Offices_Button.Location = new System.Drawing.Point(620, 278);
+            this.Show_All_Offices_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Show_All_Offices_Button.Name = "Show_All_Offices_Button";
             this.Show_All_Offices_Button.Size = new System.Drawing.Size(95, 48);
             this.Show_All_Offices_Button.TabIndex = 14;
@@ -204,14 +205,25 @@
             // 
             // Show_All_Assets_Button
             // 
-            this.Show_All_Assets_Button.Location = new System.Drawing.Point(1073, 278);
-            this.Show_All_Assets_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Show_All_Assets_Button.Location = new System.Drawing.Point(858, 278);
+            this.Show_All_Assets_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Show_All_Assets_Button.Name = "Show_All_Assets_Button";
             this.Show_All_Assets_Button.Size = new System.Drawing.Size(86, 48);
             this.Show_All_Assets_Button.TabIndex = 15;
-            this.Show_All_Assets_Button.Text = "Show All Assets";
+            this.Show_All_Assets_Button.Text = "Show All Computer Assets";
             this.Show_All_Assets_Button.UseVisualStyleBackColor = true;
             this.Show_All_Assets_Button.Click += new System.EventHandler(this.Show_All_Assets_Button_Click);
+            // 
+            // Show_All_Office_Assets_Button
+            // 
+            this.Show_All_Office_Assets_Button.Location = new System.Drawing.Point(1073, 278);
+            this.Show_All_Office_Assets_Button.Margin = new System.Windows.Forms.Padding(2);
+            this.Show_All_Office_Assets_Button.Name = "Show_All_Office_Assets_Button";
+            this.Show_All_Office_Assets_Button.Size = new System.Drawing.Size(86, 48);
+            this.Show_All_Office_Assets_Button.TabIndex = 16;
+            this.Show_All_Office_Assets_Button.Text = "Show All Office Assets";
+            this.Show_All_Office_Assets_Button.UseVisualStyleBackColor = true;
+            this.Show_All_Office_Assets_Button.Click += new System.EventHandler(this.Show_All_Office_Assets_Button_Click);
             // 
             // Form1
             // 
@@ -219,6 +231,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1411, 331);
+            this.Controls.Add(this.Show_All_Office_Assets_Button);
             this.Controls.Add(this.Show_All_Assets_Button);
             this.Controls.Add(this.Show_All_Offices_Button);
             this.Controls.Add(this.label4);
@@ -235,7 +248,7 @@
             this.Controls.Add(this.Assign_Unassign_Office_Assets_Button);
             this.Controls.Add(this.monthCalendar1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "WATS©";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -262,6 +275,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Show_All_Offices_Button;
         private System.Windows.Forms.Button Show_All_Assets_Button;
+        private System.Windows.Forms.Button Show_All_Office_Assets_Button;
     }
 }
 
