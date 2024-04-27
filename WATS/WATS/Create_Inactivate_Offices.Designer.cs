@@ -36,9 +36,9 @@
             this.Create_Office_Button = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.Show_All_Offices_Button = new System.Windows.Forms.Button();
-            this.State_Text_Box = new System.Windows.Forms.TextBox();
-            this.City_Text_Box = new System.Windows.Forms.TextBox();
-            this.Street_Address_Text_Box = new System.Windows.Forms.TextBox();
+            this.Office_State_Text_Box = new System.Windows.Forms.TextBox();
+            this.Office_City_Text_Box = new System.Windows.Forms.TextBox();
+            this.Office_Street_Address_Text_Box = new System.Windows.Forms.TextBox();
             this.Office_Name_Text_Box = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,10 +48,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label11 = new System.Windows.Forms.Label();
-            this.Zip_Code_Text_Box = new System.Windows.Forms.TextBox();
+            this.Office_Zip_Code_Text_Box = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.Activate_Office_Button = new System.Windows.Forms.Button();
             this.Office_Status_Combo_Box = new System.Windows.Forms.ComboBox();
+            this.Office_Asset_ID_Text_Box = new System.Windows.Forms.TextBox();
+            this.Office_Asset_ID = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Show_All_Office_Asset_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,8 +72,8 @@
             // 
             // Inactivate_Office_Button
             // 
-            this.Inactivate_Office_Button.Location = new System.Drawing.Point(19, 388);
-            this.Inactivate_Office_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Inactivate_Office_Button.Location = new System.Drawing.Point(20, 452);
+            this.Inactivate_Office_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Inactivate_Office_Button.Name = "Inactivate_Office_Button";
             this.Inactivate_Office_Button.Size = new System.Drawing.Size(137, 49);
             this.Inactivate_Office_Button.TabIndex = 43;
@@ -79,8 +83,8 @@
             // 
             // Office_ID_Text_Box
             // 
-            this.Office_ID_Text_Box.Location = new System.Drawing.Point(152, 359);
-            this.Office_ID_Text_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Office_ID_Text_Box.Location = new System.Drawing.Point(152, 407);
+            this.Office_ID_Text_Box.Margin = new System.Windows.Forms.Padding(2);
             this.Office_ID_Text_Box.Name = "Office_ID_Text_Box";
             this.Office_ID_Text_Box.Size = new System.Drawing.Size(180, 20);
             this.Office_ID_Text_Box.TabIndex = 42;
@@ -100,7 +104,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.Info;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(16, 324);
+            this.label9.Location = new System.Drawing.Point(15, 366);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(140, 24);
@@ -109,8 +113,8 @@
             // 
             // Create_Office_Button
             // 
-            this.Create_Office_Button.Location = new System.Drawing.Point(19, 255);
-            this.Create_Office_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_Office_Button.Location = new System.Drawing.Point(19, 287);
+            this.Create_Office_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Office_Button.Name = "Create_Office_Button";
             this.Create_Office_Button.Size = new System.Drawing.Size(297, 49);
             this.Create_Office_Button.TabIndex = 39;
@@ -132,8 +136,8 @@
             // 
             // Show_All_Offices_Button
             // 
-            this.Show_All_Offices_Button.Location = new System.Drawing.Point(673, 452);
-            this.Show_All_Offices_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Show_All_Offices_Button.Location = new System.Drawing.Point(437, 480);
+            this.Show_All_Offices_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Show_All_Offices_Button.Name = "Show_All_Offices_Button";
             this.Show_All_Offices_Button.Size = new System.Drawing.Size(200, 49);
             this.Show_All_Offices_Button.TabIndex = 37;
@@ -141,34 +145,34 @@
             this.Show_All_Offices_Button.UseVisualStyleBackColor = true;
             this.Show_All_Offices_Button.Click += new System.EventHandler(this.Show_All_Offices_Button_Click);
             // 
-            // State_Text_Box
+            // Office_State_Text_Box
             // 
-            this.State_Text_Box.Location = new System.Drawing.Point(152, 174);
-            this.State_Text_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.State_Text_Box.Name = "State_Text_Box";
-            this.State_Text_Box.Size = new System.Drawing.Size(180, 20);
-            this.State_Text_Box.TabIndex = 36;
+            this.Office_State_Text_Box.Location = new System.Drawing.Point(152, 174);
+            this.Office_State_Text_Box.Margin = new System.Windows.Forms.Padding(2);
+            this.Office_State_Text_Box.Name = "Office_State_Text_Box";
+            this.Office_State_Text_Box.Size = new System.Drawing.Size(180, 20);
+            this.Office_State_Text_Box.TabIndex = 36;
             // 
-            // City_Text_Box
+            // Office_City_Text_Box
             // 
-            this.City_Text_Box.Location = new System.Drawing.Point(152, 147);
-            this.City_Text_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.City_Text_Box.Name = "City_Text_Box";
-            this.City_Text_Box.Size = new System.Drawing.Size(180, 20);
-            this.City_Text_Box.TabIndex = 35;
+            this.Office_City_Text_Box.Location = new System.Drawing.Point(152, 147);
+            this.Office_City_Text_Box.Margin = new System.Windows.Forms.Padding(2);
+            this.Office_City_Text_Box.Name = "Office_City_Text_Box";
+            this.Office_City_Text_Box.Size = new System.Drawing.Size(180, 20);
+            this.Office_City_Text_Box.TabIndex = 35;
             // 
-            // Street_Address_Text_Box
+            // Office_Street_Address_Text_Box
             // 
-            this.Street_Address_Text_Box.Location = new System.Drawing.Point(152, 121);
-            this.Street_Address_Text_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Street_Address_Text_Box.Name = "Street_Address_Text_Box";
-            this.Street_Address_Text_Box.Size = new System.Drawing.Size(180, 20);
-            this.Street_Address_Text_Box.TabIndex = 34;
+            this.Office_Street_Address_Text_Box.Location = new System.Drawing.Point(152, 121);
+            this.Office_Street_Address_Text_Box.Margin = new System.Windows.Forms.Padding(2);
+            this.Office_Street_Address_Text_Box.Name = "Office_Street_Address_Text_Box";
+            this.Office_Street_Address_Text_Box.Size = new System.Drawing.Size(180, 20);
+            this.Office_Street_Address_Text_Box.TabIndex = 34;
             // 
             // Office_Name_Text_Box
             // 
             this.Office_Name_Text_Box.Location = new System.Drawing.Point(152, 93);
-            this.Office_Name_Text_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Office_Name_Text_Box.Margin = new System.Windows.Forms.Padding(2);
             this.Office_Name_Text_Box.Name = "Office_Name_Text_Box";
             this.Office_Name_Text_Box.Size = new System.Drawing.Size(180, 20);
             this.Office_Name_Text_Box.TabIndex = 32;
@@ -239,29 +243,29 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(437, 58);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(658, 390);
+            this.dataGridView1.Size = new System.Drawing.Size(809, 390);
             this.dataGridView1.TabIndex = 24;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(18, 362);
+            this.label11.Location = new System.Drawing.Point(19, 407);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(49, 13);
             this.label11.TabIndex = 44;
             this.label11.Text = "Office ID";
             // 
-            // Zip_Code_Text_Box
+            // Office_Zip_Code_Text_Box
             // 
-            this.Zip_Code_Text_Box.Location = new System.Drawing.Point(152, 201);
-            this.Zip_Code_Text_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Zip_Code_Text_Box.Name = "Zip_Code_Text_Box";
-            this.Zip_Code_Text_Box.Size = new System.Drawing.Size(180, 20);
-            this.Zip_Code_Text_Box.TabIndex = 45;
+            this.Office_Zip_Code_Text_Box.Location = new System.Drawing.Point(152, 201);
+            this.Office_Zip_Code_Text_Box.Margin = new System.Windows.Forms.Padding(2);
+            this.Office_Zip_Code_Text_Box.Name = "Office_Zip_Code_Text_Box";
+            this.Office_Zip_Code_Text_Box.Size = new System.Drawing.Size(180, 20);
+            this.Office_Zip_Code_Text_Box.TabIndex = 45;
             // 
             // label12
             // 
@@ -275,7 +279,7 @@
             // 
             // Activate_Office_Button
             // 
-            this.Activate_Office_Button.Location = new System.Drawing.Point(195, 388);
+            this.Activate_Office_Button.Location = new System.Drawing.Point(195, 452);
             this.Activate_Office_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Activate_Office_Button.Name = "Activate_Office_Button";
             this.Activate_Office_Button.Size = new System.Drawing.Size(137, 49);
@@ -295,16 +299,56 @@
             this.Office_Status_Combo_Box.Size = new System.Drawing.Size(180, 21);
             this.Office_Status_Combo_Box.TabIndex = 49;
             // 
+            // Office_Asset_ID_Text_Box
+            // 
+            this.Office_Asset_ID_Text_Box.Location = new System.Drawing.Point(152, 263);
+            this.Office_Asset_ID_Text_Box.Margin = new System.Windows.Forms.Padding(2);
+            this.Office_Asset_ID_Text_Box.Name = "Office_Asset_ID_Text_Box";
+            this.Office_Asset_ID_Text_Box.Size = new System.Drawing.Size(180, 20);
+            this.Office_Asset_ID_Text_Box.TabIndex = 50;
+            // 
+            // Office_Asset_ID
+            // 
+            this.Office_Asset_ID.AutoSize = true;
+            this.Office_Asset_ID.Location = new System.Drawing.Point(21, 263);
+            this.Office_Asset_ID.Name = "Office_Asset_ID";
+            this.Office_Asset_ID.Size = new System.Drawing.Size(78, 13);
+            this.Office_Asset_ID.TabIndex = 51;
+            this.Office_Asset_ID.Text = "Office Asset ID";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(240, 305);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(0, 13);
+            this.label13.TabIndex = 52;
+            // 
+            // Show_All_Office_Asset_Button
+            // 
+            this.Show_All_Office_Asset_Button.Location = new System.Drawing.Point(1046, 480);
+            this.Show_All_Office_Asset_Button.Margin = new System.Windows.Forms.Padding(2);
+            this.Show_All_Office_Asset_Button.Name = "Show_All_Office_Asset_Button";
+            this.Show_All_Office_Asset_Button.Size = new System.Drawing.Size(200, 49);
+            this.Show_All_Office_Asset_Button.TabIndex = 53;
+            this.Show_All_Office_Asset_Button.Text = "Show All Office Assets";
+            this.Show_All_Office_Asset_Button.UseVisualStyleBackColor = true;
+            this.Show_All_Office_Asset_Button.Click += new System.EventHandler(this.Show_All_Office_Asset_Button_Click);
+            // 
             // Create_Inactivate_Offices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1104, 509);
+            this.ClientSize = new System.Drawing.Size(1257, 581);
+            this.Controls.Add(this.Show_All_Office_Asset_Button);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.Office_Asset_ID);
+            this.Controls.Add(this.Office_Asset_ID_Text_Box);
             this.Controls.Add(this.Office_Status_Combo_Box);
             this.Controls.Add(this.Activate_Office_Button);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.Zip_Code_Text_Box);
+            this.Controls.Add(this.Office_Zip_Code_Text_Box);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.Inactivate_Office_Button);
             this.Controls.Add(this.Office_ID_Text_Box);
@@ -313,9 +357,9 @@
             this.Controls.Add(this.Create_Office_Button);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.Show_All_Offices_Button);
-            this.Controls.Add(this.State_Text_Box);
-            this.Controls.Add(this.City_Text_Box);
-            this.Controls.Add(this.Street_Address_Text_Box);
+            this.Controls.Add(this.Office_State_Text_Box);
+            this.Controls.Add(this.Office_City_Text_Box);
+            this.Controls.Add(this.Office_Street_Address_Text_Box);
             this.Controls.Add(this.Office_Name_Text_Box);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -343,8 +387,8 @@
         private System.Windows.Forms.Button Create_Office_Button;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button Show_All_Offices_Button;
-        private System.Windows.Forms.TextBox State_Text_Box;
-        private System.Windows.Forms.TextBox City_Text_Box;
+        private System.Windows.Forms.TextBox Office_State_Text_Box;
+        private System.Windows.Forms.TextBox Office_City_Text_Box;
         private System.Windows.Forms.TextBox Office_Name_Text_Box;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -354,10 +398,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox Zip_Code_Text_Box;
-        private System.Windows.Forms.TextBox Street_Address_Text_Box;
+        private System.Windows.Forms.TextBox Office_Zip_Code_Text_Box;
+        private System.Windows.Forms.TextBox Office_Street_Address_Text_Box;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button Activate_Office_Button;
         private System.Windows.Forms.ComboBox Office_Status_Combo_Box;
+        private System.Windows.Forms.TextBox Office_Asset_ID_Text_Box;
+        private System.Windows.Forms.Label Office_Asset_ID;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button Show_All_Office_Asset_Button;
     }
 }

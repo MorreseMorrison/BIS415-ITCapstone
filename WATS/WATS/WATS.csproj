@@ -60,11 +60,17 @@
     <Compile Include="Assign_Unassign_Office_Assets.Designer.cs">
       <DependentUpon>Assign_Unassign_Office_Assets.cs</DependentUpon>
     </Compile>
-    <Compile Include="Create_Dispose_Assets.cs">
+    <Compile Include="Create_Dispose_Computer_Assets.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Create_Dispose_Assets.Designer.cs">
-      <DependentUpon>Create_Dispose_Assets.cs</DependentUpon>
+    <Compile Include="Create_Dispose_Computer_Assets.Designer.cs">
+      <DependentUpon>Create_Dispose_Computer_Assets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Dispose_Office_Assets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_Dispose_Office_Assets.Designer.cs">
+      <DependentUpon>Create_Dispose_Office_Assets.cs</DependentUpon>
     </Compile>
     <Compile Include="Create_Inactivate_Employees.cs">
       <SubType>Form</SubType>
@@ -97,8 +103,8 @@
     <EmbeddedResource Include="Assign_Unassign_Office_Assets.resx">
       <DependentUpon>Assign_Unassign_Office_Assets.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Create_Dispose_Assets.resx">
-      <DependentUpon>Create_Dispose_Assets.cs</DependentUpon>
+    <EmbeddedResource Include="Create_Dispose_Computer_Assets.resx">
+      <DependentUpon>Create_Dispose_Computer_Assets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Create_Inactivate_Employees.resx">
       <DependentUpon>Create_Inactivate_Employees.cs</DependentUpon>

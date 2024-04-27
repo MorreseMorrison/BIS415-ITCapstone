@@ -45,12 +45,14 @@
             this.Show_All_Offices_Button = new System.Windows.Forms.Button();
             this.Show_All_Assets_Button = new System.Windows.Forms.Button();
             this.Show_All_Office_Assets_Button = new System.Windows.Forms.Button();
+            this.Create_Dispose_Office_Assets_Button = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(1168, 81);
+            this.monthCalendar1.Location = new System.Drawing.Point(1003, 50);
             this.monthCalendar1.Margin = new System.Windows.Forms.Padding(7);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
@@ -58,7 +60,7 @@
             // 
             // Assign_Unassign_Office_Assets_Button
             // 
-            this.Assign_Unassign_Office_Assets_Button.Location = new System.Drawing.Point(10, 104);
+            this.Assign_Unassign_Office_Assets_Button.Location = new System.Drawing.Point(10, 76);
             this.Assign_Unassign_Office_Assets_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Assign_Unassign_Office_Assets_Button.Name = "Assign_Unassign_Office_Assets_Button";
             this.Assign_Unassign_Office_Assets_Button.Size = new System.Drawing.Size(215, 24);
@@ -69,7 +71,7 @@
             // 
             // Assign_Unassign_Computer_Assets_Button
             // 
-            this.Assign_Unassign_Computer_Assets_Button.Location = new System.Drawing.Point(10, 144);
+            this.Assign_Unassign_Computer_Assets_Button.Location = new System.Drawing.Point(10, 113);
             this.Assign_Unassign_Computer_Assets_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Assign_Unassign_Computer_Assets_Button.Name = "Assign_Unassign_Computer_Assets_Button";
             this.Assign_Unassign_Computer_Assets_Button.Size = new System.Drawing.Size(215, 24);
@@ -80,7 +82,7 @@
             // 
             // Create_Inactivate_Employees_Button
             // 
-            this.Create_Inactivate_Employees_Button.Location = new System.Drawing.Point(10, 216);
+            this.Create_Inactivate_Employees_Button.Location = new System.Drawing.Point(10, 180);
             this.Create_Inactivate_Employees_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Inactivate_Employees_Button.Name = "Create_Inactivate_Employees_Button";
             this.Create_Inactivate_Employees_Button.Size = new System.Drawing.Size(215, 24);
@@ -91,7 +93,7 @@
             // 
             // Create_Inactivate_Offices_Button
             // 
-            this.Create_Inactivate_Offices_Button.Location = new System.Drawing.Point(10, 252);
+            this.Create_Inactivate_Offices_Button.Location = new System.Drawing.Point(10, 220);
             this.Create_Inactivate_Offices_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Inactivate_Offices_Button.Name = "Create_Inactivate_Offices_Button";
             this.Create_Inactivate_Offices_Button.Size = new System.Drawing.Size(215, 24);
@@ -119,17 +121,17 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(270, 81);
+            this.dataGridView1.Location = new System.Drawing.Point(270, 50);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(889, 193);
+            this.dataGridView1.Size = new System.Drawing.Size(724, 224);
             this.dataGridView1.TabIndex = 6;
             // 
             // Test_Database_Connection_Button
             // 
-            this.Test_Database_Connection_Button.Location = new System.Drawing.Point(270, 277);
+            this.Test_Database_Connection_Button.Location = new System.Drawing.Point(270, 310);
             this.Test_Database_Connection_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Test_Database_Connection_Button.Name = "Test_Database_Connection_Button";
             this.Test_Database_Connection_Button.Size = new System.Drawing.Size(86, 48);
@@ -140,7 +142,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(445, 278);
+            this.button6.Location = new System.Drawing.Point(422, 310);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(86, 48);
@@ -151,12 +153,12 @@
             // 
             // Create_Dispose_Assets_Button
             // 
-            this.Create_Dispose_Assets_Button.Location = new System.Drawing.Point(10, 289);
+            this.Create_Dispose_Assets_Button.Location = new System.Drawing.Point(11, 297);
             this.Create_Dispose_Assets_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Dispose_Assets_Button.Name = "Create_Dispose_Assets_Button";
             this.Create_Dispose_Assets_Button.Size = new System.Drawing.Size(215, 24);
             this.Create_Dispose_Assets_Button.TabIndex = 10;
-            this.Create_Dispose_Assets_Button.Text = "Create \\ Dispose Assets";
+            this.Create_Dispose_Assets_Button.Text = "Create \\ Dispose Computer Assets";
             this.Create_Dispose_Assets_Button.UseVisualStyleBackColor = true;
             this.Create_Dispose_Assets_Button.Click += new System.EventHandler(this.Create_Dispose_Assets_Click);
             // 
@@ -164,7 +166,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.Info;
-            this.label2.Location = new System.Drawing.Point(52, 81);
+            this.label2.Location = new System.Drawing.Point(50, 50);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 13);
@@ -184,17 +186,17 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.Info;
-            this.label4.Location = new System.Drawing.Point(68, 198);
+            this.label4.Location = new System.Drawing.Point(30, 154);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 13);
+            this.label4.Size = new System.Drawing.Size(171, 13);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Creation Screens";
+            this.label4.Text = "Employee & Office Creation Screens";
             // 
             // Show_All_Offices_Button
             // 
             this.Show_All_Offices_Button.AutoSize = true;
-            this.Show_All_Offices_Button.Location = new System.Drawing.Point(620, 278);
+            this.Show_All_Offices_Button.Location = new System.Drawing.Point(586, 310);
             this.Show_All_Offices_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Show_All_Offices_Button.Name = "Show_All_Offices_Button";
             this.Show_All_Offices_Button.Size = new System.Drawing.Size(95, 48);
@@ -205,7 +207,7 @@
             // 
             // Show_All_Assets_Button
             // 
-            this.Show_All_Assets_Button.Location = new System.Drawing.Point(858, 278);
+            this.Show_All_Assets_Button.Location = new System.Drawing.Point(763, 310);
             this.Show_All_Assets_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Show_All_Assets_Button.Name = "Show_All_Assets_Button";
             this.Show_All_Assets_Button.Size = new System.Drawing.Size(86, 48);
@@ -216,7 +218,7 @@
             // 
             // Show_All_Office_Assets_Button
             // 
-            this.Show_All_Office_Assets_Button.Location = new System.Drawing.Point(1073, 278);
+            this.Show_All_Office_Assets_Button.Location = new System.Drawing.Point(908, 310);
             this.Show_All_Office_Assets_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Show_All_Office_Assets_Button.Name = "Show_All_Office_Assets_Button";
             this.Show_All_Office_Assets_Button.Size = new System.Drawing.Size(86, 48);
@@ -225,12 +227,36 @@
             this.Show_All_Office_Assets_Button.UseVisualStyleBackColor = true;
             this.Show_All_Office_Assets_Button.Click += new System.EventHandler(this.Show_All_Office_Assets_Button_Click);
             // 
+            // Create_Dispose_Office_Assets_Button
+            // 
+            this.Create_Dispose_Office_Assets_Button.Location = new System.Drawing.Point(11, 334);
+            this.Create_Dispose_Office_Assets_Button.Margin = new System.Windows.Forms.Padding(2);
+            this.Create_Dispose_Office_Assets_Button.Name = "Create_Dispose_Office_Assets_Button";
+            this.Create_Dispose_Office_Assets_Button.Size = new System.Drawing.Size(215, 24);
+            this.Create_Dispose_Office_Assets_Button.TabIndex = 17;
+            this.Create_Dispose_Office_Assets_Button.Text = "Create \\ Dispose Office Assets";
+            this.Create_Dispose_Office_Assets_Button.UseVisualStyleBackColor = true;
+            this.Create_Dispose_Office_Assets_Button.Click += new System.EventHandler(this.Create_Dispose_Office_Assets_Button_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Info;
+            this.label5.Location = new System.Drawing.Point(50, 271);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(117, 13);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Asset Creation Screens";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1411, 331);
+            this.ClientSize = new System.Drawing.Size(1235, 369);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Create_Dispose_Office_Assets_Button);
             this.Controls.Add(this.Show_All_Office_Assets_Button);
             this.Controls.Add(this.Show_All_Assets_Button);
             this.Controls.Add(this.Show_All_Offices_Button);
@@ -276,6 +302,8 @@
         private System.Windows.Forms.Button Show_All_Offices_Button;
         private System.Windows.Forms.Button Show_All_Assets_Button;
         private System.Windows.Forms.Button Show_All_Office_Assets_Button;
+        private System.Windows.Forms.Button Create_Dispose_Office_Assets_Button;
+        private System.Windows.Forms.Label label5;
     }
 }
 

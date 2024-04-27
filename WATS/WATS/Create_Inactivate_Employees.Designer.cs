@@ -35,8 +35,8 @@
             this.Create_Employee_Button = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.Show_All_Offices_Button = new System.Windows.Forms.Button();
-            this.Last_Name_Text_Box = new System.Windows.Forms.TextBox();
-            this.First_Name_Text_Box = new System.Windows.Forms.TextBox();
+            this.Employee_Last_Name_Text_Box = new System.Windows.Forms.TextBox();
+            this.Employee_First_Name_Text_Box = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -46,13 +46,14 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.Reactivate_Employee_Button = new System.Windows.Forms.Button();
-            this.Job_Title_Combo_Box = new System.Windows.Forms.ComboBox();
-            this.Status_Combo_Box = new System.Windows.Forms.ComboBox();
+            this.Employee_Job_Title_Combo_Box = new System.Windows.Forms.ComboBox();
+            this.Employee_Status_Combo_Box = new System.Windows.Forms.ComboBox();
             this.Office_ID_Text_Box = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.Email_Text_Box = new System.Windows.Forms.TextBox();
+            this.Employee_Email_Text_Box = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.Asset_ID_Text_Box = new System.Windows.Forms.TextBox();
+            this.Computer_Asset_ID_Text_Box = new System.Windows.Forms.TextBox();
+            this.Show_All_Computer_Assets_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.watsDataSet1)).BeginInit();
             this.SuspendLayout();
@@ -71,7 +72,7 @@
             // Inactivate_Employee_Button
             // 
             this.Inactivate_Employee_Button.Location = new System.Drawing.Point(26, 406);
-            this.Inactivate_Employee_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Inactivate_Employee_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Inactivate_Employee_Button.Name = "Inactivate_Employee_Button";
             this.Inactivate_Employee_Button.Size = new System.Drawing.Size(120, 49);
             this.Inactivate_Employee_Button.TabIndex = 59;
@@ -82,7 +83,7 @@
             // Employee_ID_Text_Box
             // 
             this.Employee_ID_Text_Box.Location = new System.Drawing.Point(144, 371);
-            this.Employee_ID_Text_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Employee_ID_Text_Box.Margin = new System.Windows.Forms.Padding(2);
             this.Employee_ID_Text_Box.Name = "Employee_ID_Text_Box";
             this.Employee_ID_Text_Box.Size = new System.Drawing.Size(180, 20);
             this.Employee_ID_Text_Box.TabIndex = 58;
@@ -103,7 +104,7 @@
             // Create_Employee_Button
             // 
             this.Create_Employee_Button.Location = new System.Drawing.Point(26, 272);
-            this.Create_Employee_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_Employee_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Employee_Button.Name = "Create_Employee_Button";
             this.Create_Employee_Button.Size = new System.Drawing.Size(297, 49);
             this.Create_Employee_Button.TabIndex = 56;
@@ -125,8 +126,8 @@
             // 
             // Show_All_Offices_Button
             // 
-            this.Show_All_Offices_Button.Location = new System.Drawing.Point(764, 461);
-            this.Show_All_Offices_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Show_All_Offices_Button.Location = new System.Drawing.Point(514, 459);
+            this.Show_All_Offices_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Show_All_Offices_Button.Name = "Show_All_Offices_Button";
             this.Show_All_Offices_Button.Size = new System.Drawing.Size(200, 49);
             this.Show_All_Offices_Button.TabIndex = 54;
@@ -134,21 +135,21 @@
             this.Show_All_Offices_Button.UseVisualStyleBackColor = true;
             this.Show_All_Offices_Button.Click += new System.EventHandler(this.Show_All_Offices_Button_Click);
             // 
-            // Last_Name_Text_Box
+            // Employee_Last_Name_Text_Box
             // 
-            this.Last_Name_Text_Box.Location = new System.Drawing.Point(213, 93);
-            this.Last_Name_Text_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Last_Name_Text_Box.Name = "Last_Name_Text_Box";
-            this.Last_Name_Text_Box.Size = new System.Drawing.Size(180, 20);
-            this.Last_Name_Text_Box.TabIndex = 51;
+            this.Employee_Last_Name_Text_Box.Location = new System.Drawing.Point(213, 93);
+            this.Employee_Last_Name_Text_Box.Margin = new System.Windows.Forms.Padding(2);
+            this.Employee_Last_Name_Text_Box.Name = "Employee_Last_Name_Text_Box";
+            this.Employee_Last_Name_Text_Box.Size = new System.Drawing.Size(180, 20);
+            this.Employee_Last_Name_Text_Box.TabIndex = 51;
             // 
-            // First_Name_Text_Box
+            // Employee_First_Name_Text_Box
             // 
-            this.First_Name_Text_Box.Location = new System.Drawing.Point(213, 65);
-            this.First_Name_Text_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.First_Name_Text_Box.Name = "First_Name_Text_Box";
-            this.First_Name_Text_Box.Size = new System.Drawing.Size(180, 20);
-            this.First_Name_Text_Box.TabIndex = 50;
+            this.Employee_First_Name_Text_Box.Location = new System.Drawing.Point(213, 65);
+            this.Employee_First_Name_Text_Box.Margin = new System.Windows.Forms.Padding(2);
+            this.Employee_First_Name_Text_Box.Name = "Employee_First_Name_Text_Box";
+            this.Employee_First_Name_Text_Box.Size = new System.Drawing.Size(180, 20);
+            this.Employee_First_Name_Text_Box.TabIndex = 50;
             // 
             // label3
             // 
@@ -176,7 +177,7 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(514, 65);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(658, 390);
@@ -238,30 +239,30 @@
             this.Reactivate_Employee_Button.UseVisualStyleBackColor = true;
             this.Reactivate_Employee_Button.Click += new System.EventHandler(this.Reactivate_Employee_Button_Click);
             // 
-            // Job_Title_Combo_Box
+            // Employee_Job_Title_Combo_Box
             // 
-            this.Job_Title_Combo_Box.FormattingEnabled = true;
-            this.Job_Title_Combo_Box.Items.AddRange(new object[] {
+            this.Employee_Job_Title_Combo_Box.FormattingEnabled = true;
+            this.Employee_Job_Title_Combo_Box.Items.AddRange(new object[] {
             "Financial Analyst",
             "Wealth Advisor",
             "Day Trader",
             "IT Manager",
             "VP Of Financial Operations"});
-            this.Job_Title_Combo_Box.Location = new System.Drawing.Point(213, 125);
-            this.Job_Title_Combo_Box.Name = "Job_Title_Combo_Box";
-            this.Job_Title_Combo_Box.Size = new System.Drawing.Size(180, 21);
-            this.Job_Title_Combo_Box.TabIndex = 70;
+            this.Employee_Job_Title_Combo_Box.Location = new System.Drawing.Point(213, 125);
+            this.Employee_Job_Title_Combo_Box.Name = "Employee_Job_Title_Combo_Box";
+            this.Employee_Job_Title_Combo_Box.Size = new System.Drawing.Size(180, 21);
+            this.Employee_Job_Title_Combo_Box.TabIndex = 70;
             // 
-            // Status_Combo_Box
+            // Employee_Status_Combo_Box
             // 
-            this.Status_Combo_Box.FormattingEnabled = true;
-            this.Status_Combo_Box.Items.AddRange(new object[] {
+            this.Employee_Status_Combo_Box.FormattingEnabled = true;
+            this.Employee_Status_Combo_Box.Items.AddRange(new object[] {
             "ACTIVE",
             "INACTIVE"});
-            this.Status_Combo_Box.Location = new System.Drawing.Point(213, 160);
-            this.Status_Combo_Box.Name = "Status_Combo_Box";
-            this.Status_Combo_Box.Size = new System.Drawing.Size(180, 21);
-            this.Status_Combo_Box.TabIndex = 72;
+            this.Employee_Status_Combo_Box.Location = new System.Drawing.Point(213, 160);
+            this.Employee_Status_Combo_Box.Name = "Employee_Status_Combo_Box";
+            this.Employee_Status_Combo_Box.Size = new System.Drawing.Size(180, 21);
+            this.Employee_Status_Combo_Box.TabIndex = 72;
             // 
             // Office_ID_Text_Box
             // 
@@ -279,28 +280,39 @@
             this.label5.TabIndex = 74;
             this.label5.Text = "Email Address";
             // 
-            // Email_Text_Box
+            // Employee_Email_Text_Box
             // 
-            this.Email_Text_Box.Location = new System.Drawing.Point(213, 219);
-            this.Email_Text_Box.Name = "Email_Text_Box";
-            this.Email_Text_Box.Size = new System.Drawing.Size(180, 20);
-            this.Email_Text_Box.TabIndex = 75;
+            this.Employee_Email_Text_Box.Location = new System.Drawing.Point(213, 219);
+            this.Employee_Email_Text_Box.Name = "Employee_Email_Text_Box";
+            this.Employee_Email_Text_Box.Size = new System.Drawing.Size(180, 20);
+            this.Employee_Email_Text_Box.TabIndex = 75;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(26, 247);
+            this.label7.Location = new System.Drawing.Point(23, 247);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(50, 13);
             this.label7.TabIndex = 76;
             this.label7.Text = "Asset_ID";
             // 
-            // Asset_ID_Text_Box
+            // Computer_Asset_ID_Text_Box
             // 
-            this.Asset_ID_Text_Box.Location = new System.Drawing.Point(213, 247);
-            this.Asset_ID_Text_Box.Name = "Asset_ID_Text_Box";
-            this.Asset_ID_Text_Box.Size = new System.Drawing.Size(180, 20);
-            this.Asset_ID_Text_Box.TabIndex = 77;
+            this.Computer_Asset_ID_Text_Box.Location = new System.Drawing.Point(213, 247);
+            this.Computer_Asset_ID_Text_Box.Name = "Computer_Asset_ID_Text_Box";
+            this.Computer_Asset_ID_Text_Box.Size = new System.Drawing.Size(180, 20);
+            this.Computer_Asset_ID_Text_Box.TabIndex = 77;
+            // 
+            // Show_All_Computer_Assets_Button
+            // 
+            this.Show_All_Computer_Assets_Button.Location = new System.Drawing.Point(972, 459);
+            this.Show_All_Computer_Assets_Button.Margin = new System.Windows.Forms.Padding(2);
+            this.Show_All_Computer_Assets_Button.Name = "Show_All_Computer_Assets_Button";
+            this.Show_All_Computer_Assets_Button.Size = new System.Drawing.Size(200, 49);
+            this.Show_All_Computer_Assets_Button.TabIndex = 78;
+            this.Show_All_Computer_Assets_Button.Text = "Show All Computer Assets";
+            this.Show_All_Computer_Assets_Button.UseVisualStyleBackColor = true;
+            this.Show_All_Computer_Assets_Button.Click += new System.EventHandler(this.Show_All_Computer_Assets_Button_Click);
             // 
             // Create_Inactivate_Employees
             // 
@@ -308,13 +320,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1233, 518);
-            this.Controls.Add(this.Asset_ID_Text_Box);
+            this.Controls.Add(this.Show_All_Computer_Assets_Button);
+            this.Controls.Add(this.Computer_Asset_ID_Text_Box);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.Email_Text_Box);
+            this.Controls.Add(this.Employee_Email_Text_Box);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Office_ID_Text_Box);
-            this.Controls.Add(this.Status_Combo_Box);
-            this.Controls.Add(this.Job_Title_Combo_Box);
+            this.Controls.Add(this.Employee_Status_Combo_Box);
+            this.Controls.Add(this.Employee_Job_Title_Combo_Box);
             this.Controls.Add(this.Reactivate_Employee_Button);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -326,8 +339,8 @@
             this.Controls.Add(this.Create_Employee_Button);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.Show_All_Offices_Button);
-            this.Controls.Add(this.Last_Name_Text_Box);
-            this.Controls.Add(this.First_Name_Text_Box);
+            this.Controls.Add(this.Employee_Last_Name_Text_Box);
+            this.Controls.Add(this.Employee_First_Name_Text_Box);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
@@ -350,8 +363,8 @@
         private System.Windows.Forms.Button Create_Employee_Button;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button Show_All_Offices_Button;
-        private System.Windows.Forms.TextBox Last_Name_Text_Box;
-        private System.Windows.Forms.TextBox First_Name_Text_Box;
+        private System.Windows.Forms.TextBox Employee_Last_Name_Text_Box;
+        private System.Windows.Forms.TextBox Employee_First_Name_Text_Box;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -361,12 +374,13 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button Reactivate_Employee_Button;
-        private System.Windows.Forms.ComboBox Job_Title_Combo_Box;
-        private System.Windows.Forms.ComboBox Status_Combo_Box;
+        private System.Windows.Forms.ComboBox Employee_Job_Title_Combo_Box;
+        private System.Windows.Forms.ComboBox Employee_Status_Combo_Box;
         private System.Windows.Forms.TextBox Office_ID_Text_Box;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox Email_Text_Box;
+        private System.Windows.Forms.TextBox Employee_Email_Text_Box;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox Asset_ID_Text_Box;
+        private System.Windows.Forms.TextBox Computer_Asset_ID_Text_Box;
+        private System.Windows.Forms.Button Show_All_Computer_Assets_Button;
     }
 }

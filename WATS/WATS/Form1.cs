@@ -71,7 +71,7 @@ namespace WATS
         //(5)Create_Dispose_Assets.cs
         private void Create_Dispose_Assets_Click(object sender, EventArgs e)
         {
-            Create_Dispose_Assets FormLoader = new Create_Dispose_Assets();
+            Create_Dispose_Computer_Assets FormLoader = new Create_Dispose_Computer_Assets();
             FormLoader.Show();
         }
         //**(SECTION 2 - CREATION SCREENS - END)**//
@@ -550,6 +550,12 @@ namespace WATS
 
 
 
+        }
+
+        private void Create_Dispose_Office_Assets_Button_Click(object sender, EventArgs e)
+        {
+            Create_Dispose_Office_Assets FormLoader = new Create_Dispose_Office_Assets();
+            FormLoader.Show();
         }
     }
         //**DB CODE**//
