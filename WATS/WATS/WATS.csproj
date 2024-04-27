@@ -106,6 +106,9 @@
     <EmbeddedResource Include="Create_Dispose_Computer_Assets.resx">
       <DependentUpon>Create_Dispose_Computer_Assets.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Create_Dispose_Office_Assets.resx">
+      <DependentUpon>Create_Dispose_Office_Assets.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Create_Inactivate_Employees.resx">
       <DependentUpon>Create_Inactivate_Employees.cs</DependentUpon>
     </EmbeddedResource>

@@ -35,7 +35,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.Computer_Asset_Model_Name_Text_Box = new System.Windows.Forms.TextBox();
             this.Computer_Asset_Purchase_Date_Text_Box = new System.Windows.Forms.TextBox();
             this.Computer_Asset_NBV_Text_Box = new System.Windows.Forms.TextBox();
             this.Show_All_Computer_Assets_Button = new System.Windows.Forms.Button();
@@ -50,6 +49,7 @@
             this.Computer_Asset_Manufacturer_Combo_Box = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.Computer_Asset_Status_Combo_Box = new System.Windows.Forms.ComboBox();
+            this.Computer_Asset_Model_Name_Text_Box = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +68,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(404, 50);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(789, 390);
@@ -124,18 +124,10 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Computer Asset NBV";
             // 
-            // Computer_Asset_Model_Name_Text_Box
-            // 
-            this.Computer_Asset_Model_Name_Text_Box.Location = new System.Drawing.Point(185, 155);
-            this.Computer_Asset_Model_Name_Text_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Computer_Asset_Model_Name_Text_Box.Name = "Computer_Asset_Model_Name_Text_Box";
-            this.Computer_Asset_Model_Name_Text_Box.Size = new System.Drawing.Size(180, 20);
-            this.Computer_Asset_Model_Name_Text_Box.TabIndex = 11;
-            // 
             // Computer_Asset_Purchase_Date_Text_Box
             // 
             this.Computer_Asset_Purchase_Date_Text_Box.Location = new System.Drawing.Point(185, 202);
-            this.Computer_Asset_Purchase_Date_Text_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Computer_Asset_Purchase_Date_Text_Box.Margin = new System.Windows.Forms.Padding(2);
             this.Computer_Asset_Purchase_Date_Text_Box.Name = "Computer_Asset_Purchase_Date_Text_Box";
             this.Computer_Asset_Purchase_Date_Text_Box.Size = new System.Drawing.Size(180, 20);
             this.Computer_Asset_Purchase_Date_Text_Box.TabIndex = 12;
@@ -143,7 +135,7 @@
             // Computer_Asset_NBV_Text_Box
             // 
             this.Computer_Asset_NBV_Text_Box.Location = new System.Drawing.Point(185, 243);
-            this.Computer_Asset_NBV_Text_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Computer_Asset_NBV_Text_Box.Margin = new System.Windows.Forms.Padding(2);
             this.Computer_Asset_NBV_Text_Box.Name = "Computer_Asset_NBV_Text_Box";
             this.Computer_Asset_NBV_Text_Box.Size = new System.Drawing.Size(180, 20);
             this.Computer_Asset_NBV_Text_Box.TabIndex = 13;
@@ -151,7 +143,7 @@
             // Show_All_Computer_Assets_Button
             // 
             this.Show_All_Computer_Assets_Button.Location = new System.Drawing.Point(704, 521);
-            this.Show_All_Computer_Assets_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Show_All_Computer_Assets_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Show_All_Computer_Assets_Button.Name = "Show_All_Computer_Assets_Button";
             this.Show_All_Computer_Assets_Button.Size = new System.Drawing.Size(198, 85);
             this.Show_All_Computer_Assets_Button.TabIndex = 16;
@@ -174,7 +166,7 @@
             // Create_Asset_Button
             // 
             this.Create_Asset_Button.Location = new System.Drawing.Point(23, 391);
-            this.Create_Asset_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Create_Asset_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Create_Asset_Button.Name = "Create_Asset_Button";
             this.Create_Asset_Button.Size = new System.Drawing.Size(297, 49);
             this.Create_Asset_Button.TabIndex = 18;
@@ -207,7 +199,7 @@
             // Computer_Asset_ID_Text_Box
             // 
             this.Computer_Asset_ID_Text_Box.Location = new System.Drawing.Point(140, 521);
-            this.Computer_Asset_ID_Text_Box.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Computer_Asset_ID_Text_Box.Margin = new System.Windows.Forms.Padding(2);
             this.Computer_Asset_ID_Text_Box.Name = "Computer_Asset_ID_Text_Box";
             this.Computer_Asset_ID_Text_Box.Size = new System.Drawing.Size(180, 20);
             this.Computer_Asset_ID_Text_Box.TabIndex = 21;
@@ -215,7 +207,7 @@
             // Dispose_Asset_Button
             // 
             this.Dispose_Asset_Button.Location = new System.Drawing.Point(23, 557);
-            this.Dispose_Asset_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Dispose_Asset_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Dispose_Asset_Button.Name = "Dispose_Asset_Button";
             this.Dispose_Asset_Button.Size = new System.Drawing.Size(297, 49);
             this.Dispose_Asset_Button.TabIndex = 22;
@@ -266,7 +258,15 @@
             this.Computer_Asset_Status_Combo_Box.Size = new System.Drawing.Size(180, 21);
             this.Computer_Asset_Status_Combo_Box.TabIndex = 27;
             // 
-            // Create_Dispose_Assets
+            // Computer_Asset_Model_Name_Text_Box
+            // 
+            this.Computer_Asset_Model_Name_Text_Box.Location = new System.Drawing.Point(185, 155);
+            this.Computer_Asset_Model_Name_Text_Box.Margin = new System.Windows.Forms.Padding(2);
+            this.Computer_Asset_Model_Name_Text_Box.Name = "Computer_Asset_Model_Name_Text_Box";
+            this.Computer_Asset_Model_Name_Text_Box.Size = new System.Drawing.Size(180, 20);
+            this.Computer_Asset_Model_Name_Text_Box.TabIndex = 11;
+            // 
+            // Create_Dispose_Computer_Assets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -293,7 +293,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Name = "Create_Dispose_Assets";
+            this.Name = "Create_Dispose_Computer_Assets";
             this.Text = "Create_Dispose_Assets";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -310,7 +310,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox Computer_Asset_Model_Name_Text_Box;
         private System.Windows.Forms.TextBox Computer_Asset_Purchase_Date_Text_Box;
         private System.Windows.Forms.TextBox Computer_Asset_NBV_Text_Box;
         private System.Windows.Forms.Button Show_All_Computer_Assets_Button;
@@ -325,5 +324,6 @@
         private System.Windows.Forms.ComboBox Computer_Asset_Manufacturer_Combo_Box;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox Computer_Asset_Status_Combo_Box;
+        private System.Windows.Forms.TextBox Computer_Asset_Model_Name_Text_Box;
     }
 }

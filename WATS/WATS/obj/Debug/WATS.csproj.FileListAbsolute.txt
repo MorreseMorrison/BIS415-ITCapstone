@@ -13,3 +13,4 @@ C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.Crea
 C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.Create_Inactivate_Offices.resources
 C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.csprojAssemblyReference.cache
 C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.Create_Dispose_Computer_Assets.resources
+C:\Users\resemoney\Documents\BIS 415 - IT Capstone\WATS\WATS\obj\Debug\WATS.Create_Dispose_Office_Assets.resources
