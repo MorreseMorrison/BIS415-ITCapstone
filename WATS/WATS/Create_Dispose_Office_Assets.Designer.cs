@@ -298,6 +298,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Create_Dispose_Office_Assets";
             this.Text = "Create_Dispose_Office_Assets";
             this.Load += new System.EventHandler(this.Create_Dispose_Office_Assets_Load);

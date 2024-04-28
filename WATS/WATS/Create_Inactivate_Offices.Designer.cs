@@ -369,6 +369,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Create_Inactivate_Offices";
             this.Text = "Create_Inactivate_Offices";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -65,7 +65,7 @@
             this.Assign_Unassign_Office_Assets_Button.Name = "Assign_Unassign_Office_Assets_Button";
             this.Assign_Unassign_Office_Assets_Button.Size = new System.Drawing.Size(215, 24);
             this.Assign_Unassign_Office_Assets_Button.TabIndex = 1;
-            this.Assign_Unassign_Office_Assets_Button.Text = "Assign \\ Unassign Office Assets";
+            this.Assign_Unassign_Office_Assets_Button.Text = "🏢 Assign \\ Unassign Office Assets";
             this.Assign_Unassign_Office_Assets_Button.UseVisualStyleBackColor = true;
             this.Assign_Unassign_Office_Assets_Button.Click += new System.EventHandler(this.Assign_Unassign_Office_Assets_Button_Click);
             // 
@@ -254,6 +254,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::WATS.Properties.Resources.Enterprise;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1235, 369);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Create_Dispose_Office_Assets_Button);
@@ -273,6 +275,7 @@
             this.Controls.Add(this.Assign_Unassign_Computer_Assets_Button);
             this.Controls.Add(this.Assign_Unassign_Office_Assets_Button);
             this.Controls.Add(this.monthCalendar1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";

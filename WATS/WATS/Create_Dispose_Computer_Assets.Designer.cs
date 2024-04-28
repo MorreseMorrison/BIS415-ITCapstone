@@ -271,6 +271,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1222, 636);
             this.Controls.Add(this.Computer_Asset_Status_Combo_Box);
             this.Controls.Add(this.label11);
@@ -293,6 +294,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Create_Dispose_Computer_Assets";
             this.Text = "Create_Dispose_Assets";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
