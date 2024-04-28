@@ -256,7 +256,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::WATS.Properties.Resources.Enterprise;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1235, 369);
+            this.ClientSize = new System.Drawing.Size(1142, 369);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Create_Dispose_Office_Assets_Button);
             this.Controls.Add(this.Show_All_Office_Assets_Button);

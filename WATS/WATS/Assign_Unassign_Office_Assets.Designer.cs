@@ -168,7 +168,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1340, 567);
+            this.ClientSize = new System.Drawing.Size(1271, 539);
             this.Controls.Add(this.Show_Offices_Button);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Create_Inactivate_Employees));
             this.label1 = new System.Windows.Forms.Label();
             this.Inactivate_Employee_Button = new System.Windows.Forms.Button();
             this.Employee_ID_Text_Box = new System.Windows.Forms.TextBox();
@@ -154,6 +155,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.Info;
             this.label3.Location = new System.Drawing.Point(23, 93);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -164,6 +166,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Info;
             this.label2.Location = new System.Drawing.Point(23, 67);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -191,6 +194,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.Info;
             this.label4.Location = new System.Drawing.Point(26, 371);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -201,6 +205,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.Info;
             this.label6.Location = new System.Drawing.Point(23, 125);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
@@ -211,6 +216,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.SystemColors.Info;
             this.label10.Location = new System.Drawing.Point(23, 160);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
@@ -221,6 +227,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.SystemColors.Info;
             this.label11.Location = new System.Drawing.Point(23, 189);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
@@ -274,6 +281,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Info;
             this.label5.Location = new System.Drawing.Point(23, 219);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 13);
@@ -290,6 +298,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.Info;
             this.label7.Location = new System.Drawing.Point(23, 247);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(50, 13);
@@ -319,7 +328,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1233, 518);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1199, 518);
             this.Controls.Add(this.Show_All_Computer_Assets_Button);
             this.Controls.Add(this.Computer_Asset_ID_Text_Box);
             this.Controls.Add(this.label7);

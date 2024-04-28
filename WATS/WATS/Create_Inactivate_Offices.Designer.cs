@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Create_Inactivate_Offices));
             this.label1 = new System.Windows.Forms.Label();
             this.Inactivate_Office_Button = new System.Windows.Forms.Button();
             this.Office_ID_Text_Box = new System.Windows.Forms.TextBox();
@@ -190,6 +191,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.Info;
             this.label6.Location = new System.Drawing.Point(18, 201);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
@@ -200,6 +202,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Info;
             this.label5.Location = new System.Drawing.Point(16, 174);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
@@ -210,6 +213,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.Info;
             this.label4.Location = new System.Drawing.Point(18, 151);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -220,6 +224,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.Info;
             this.label3.Location = new System.Drawing.Point(18, 125);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -230,6 +235,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Info;
             this.label2.Location = new System.Drawing.Point(18, 98);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -242,7 +248,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(437, 58);
+            this.dataGridView1.Location = new System.Drawing.Point(417, 58);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
@@ -252,6 +258,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.SystemColors.Info;
             this.label11.Location = new System.Drawing.Point(19, 407);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
@@ -270,6 +277,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.SystemColors.Info;
             this.label12.Location = new System.Drawing.Point(18, 231);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
@@ -310,6 +318,7 @@
             // Office_Asset_ID
             // 
             this.Office_Asset_ID.AutoSize = true;
+            this.Office_Asset_ID.BackColor = System.Drawing.SystemColors.Info;
             this.Office_Asset_ID.Location = new System.Drawing.Point(21, 263);
             this.Office_Asset_ID.Name = "Office_Asset_ID";
             this.Office_Asset_ID.Size = new System.Drawing.Size(78, 13);
@@ -340,7 +349,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1257, 581);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1227, 581);
             this.Controls.Add(this.Show_All_Office_Asset_Button);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.Office_Asset_ID);

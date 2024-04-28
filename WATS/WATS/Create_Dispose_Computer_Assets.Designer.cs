@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Create_Dispose_Computer_Assets));
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
@@ -58,7 +59,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Info;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(494, 9);
+            this.label1.Location = new System.Drawing.Point(423, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(348, 26);
             this.label1.TabIndex = 0;
@@ -66,8 +67,10 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(404, 50);
+            this.dataGridView1.Location = new System.Drawing.Point(370, 50);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
@@ -77,6 +80,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Info;
             this.label2.Location = new System.Drawing.Point(23, 71);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -87,6 +91,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.Info;
             this.label4.Location = new System.Drawing.Point(24, 112);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -97,6 +102,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Info;
             this.label5.Location = new System.Drawing.Point(23, 155);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
@@ -107,6 +113,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.Info;
             this.label6.Location = new System.Drawing.Point(24, 202);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
@@ -117,6 +124,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.Info;
             this.label7.Location = new System.Drawing.Point(24, 243);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
@@ -142,7 +150,7 @@
             // 
             // Show_All_Computer_Assets_Button
             // 
-            this.Show_All_Computer_Assets_Button.Location = new System.Drawing.Point(704, 521);
+            this.Show_All_Computer_Assets_Button.Location = new System.Drawing.Point(618, 449);
             this.Show_All_Computer_Assets_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Show_All_Computer_Assets_Button.Name = "Show_All_Computer_Assets_Button";
             this.Show_All_Computer_Assets_Button.Size = new System.Drawing.Size(198, 85);
@@ -189,6 +197,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.SystemColors.Info;
             this.label10.Location = new System.Drawing.Point(20, 521);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
@@ -241,6 +250,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.SystemColors.Info;
             this.label11.Location = new System.Drawing.Point(24, 284);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
@@ -271,8 +281,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1222, 636);
+            this.ClientSize = new System.Drawing.Size(1161, 608);
             this.Controls.Add(this.Computer_Asset_Status_Combo_Box);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.Computer_Asset_Manufacturer_Combo_Box);
